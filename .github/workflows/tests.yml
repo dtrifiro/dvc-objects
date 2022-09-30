@@ -75,7 +75,7 @@ jobs:
         TEST_SESSION: ${{ matrix.nox_session || format('tests-{0}', matrix.pyv) }}
 
     - name: Upload coverage report
-      uses: codecov/codecov-action@v3.1.0
+      uses: codecov/codecov-action@v3.1.1
 
     - name: Build package
       run: nox -s build
